@@ -1,0 +1,48 @@
+/* псевдоклассы доч елем */
+
+/* 
+:first-child - первый внутри элемента
+
+:first-of-type - превый в своем роде(классе и т.д)
+ */
+
+/* .parent,
+ul {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  border: 5px solid blue;
+}
+
+div:first-child {
+  color: darkviolet;
+  border-top: 2px solid black;
+}
+
+.child:last-child {
+  border: 1px solid green;
+}
+
+li:first-child {
+  color: red;
+}
+
+li:last-child {
+  color: orange;
+} */
+
+.A:last-of-type {
+  color: red;
+}
+
+.B:last-of-type {
+  color: blue;
+}
+
+.A:first-of-type {
+  color: red;
+}
+
+.B:first-of-type {
+  color: blue;
+}
