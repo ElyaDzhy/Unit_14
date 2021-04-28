@@ -1,16 +1,51 @@
-/* псевдоклассы доч елем */
-
-/* only-child - единственный ребенок родителя
-only-of-type - единственный в своем роде
- */
-.parent {
-  font-weight: bold;
+table {
+  --text-color: rgba(255, 255, 255, 0.76);
+  border-collapse: collapse;
 }
 
-.A:only-child {
-  color: red;
+td {
+  padding: 10px 20px;
+
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 3px solid rgb(236, 167, 167);
+
+  font-family: "Homemade Apple", cursive;
+  font-weight: 400;
 }
 
-h2:only-of-type {
-  color: hotpink;
+tr {
+  color: var(--text-color);
+  font-weight: bolder;
+}
+
+/* tr {
+  background-color: indianred;
+}
+
+tr:nth-child(2n) {
+  background-color: rgba(197, 124, 124, 0.856);
+} */
+
+/* tr:nth-child(odd) {
+  background-color: indianred;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(197, 124, 124, 0.856);
+} */
+
+/* каждый 3 начиная с 1, 2, 3 : */
+
+tr:nth-child(3n + 1) {
+  background-color: rgb(164, 16, 233);
+}
+tr:nth-child(3n + 2) {
+  background-color: rgb(209, 103, 223);
+}
+
+tr:nth-child(3n + 3) {
+  background-color: rgb(245, 179, 245);
 }
